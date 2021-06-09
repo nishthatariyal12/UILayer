@@ -6,9 +6,8 @@ div{
 }
 
     
-#header {
-    padding: 1% 13%;
-}
+
+
 footer {
     display: block;
 }
@@ -24,14 +23,18 @@ body {
     color: #333;
 }
         
+#header {
+    padding: 1% 13%;
+}
 
 #header {
-        display: block;
-        background: #003d63;
-        padding: 1% 12%;
-        font-size: 20px;
-        color: #fff;
-    }
+    display: block;
+    background: #003d63;
+    padding: 1% 12%;
+    font-size: 20px;
+    color: #fff;
+}
+
 p {
         text-align: justify;
        
