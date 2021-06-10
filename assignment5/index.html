@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+<body>
+    <h1>Sample Invoice for order on amazon</h1>
+    <div class="w3-container">
+    
+      
+        <table class="w3-table w3-bordered">
+          <tr>
+            <th>Item No</th>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Unit price</th>
+            <th>Total Price</th>
+          </tr>
+          <tr >
+              <td>Item01</td>
+              <td>Pepsi</td>
+              <td>
+                
+                <button onclick="decrement1()" >-</button>
+                <span id="counter">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <button onclick="increment1()" >+</button>
+               
+                
+               
+              </td>
+              
+              <td> 20</td>
+              <td>20</td>
+              
+             
+          </tr>
+          <tr>
+            <td>Item02</td>
+            <td>Maggi</td>
+            <td>
+              
+                <button onclick="decrement2()" >-</button>
+                <span id="counter1">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <button onclick="increment2()" >+</button>
+                
+            </td>
+            
+            <td> 20</td>
+            <td>40</td>
+            
+            
+          </tr>
+          <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>60</td>
+          </tr>
+          
+        </table>
+      </div>
+      
+
+    <script src="script.js"></script>
+</body>
+</html>
