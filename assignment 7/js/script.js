@@ -17,15 +17,17 @@
 // }
 
 const languages = new Array();
-const ul = document.createElement("ul");
+
 $(document).ready(function() {
   $('#target').click(function() {
       var content = $('#language').val();
       languages.push(content)
       console.log(languages);
-      var fixingContent = 
-          '<li>' + content + '</li>';
+      if (typeof(Storage)!=="undefined"){
+        localStorage.setItem(languages.length,content);
+      }
+          
             
-      $('#root').append(fixingContent);
+      $('#root').append("<ul><li>"+content+"</li></ul>");
   })
 })
