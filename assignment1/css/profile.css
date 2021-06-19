@@ -1,0 +1,11 @@
+.icon-phone:before{color:#555;}
+.icon-phone,.icon-webmail, .fa-graduation-cap, .fa-mobile-phone , .fa-user{background-color:#e6e6e6;}
+input.confidential{background-color:#fff;border:0;border-bottom:1px solid #001689;}
+.confidential-box ul{margin:0;list-style:none;padding:0;}
+.confidential-box li{margin:10px 0 10px 0;}
+i.fa-pencil,  i.fa-save,  i.fa-pencil, i.fa-save , i.fa-check, i.fa-question-circle, i.fa-close{font-size:20px;vertical-align:bottom;color:#aaa;cursor:pointer;border:solid 0px #fff;border-radius:unset}
+i.fa.fa-pencil:hover, i.fa-save:hover , i.fa-camera:hover ,i.fa-check:hover , i.fa-question-circle:hover, i.fa-close:hover{color:navy;cursor:pointer}
+i.fa-plus-circle,i.fa-camera{font-size:18px;color:#aaa;}
+i.fa-plus-circle:hover{color:navy}
+i.fa-save{color:#001689 !important;font-size:20px !important;}
+.fa-pencil{color:#00a6d6;}
