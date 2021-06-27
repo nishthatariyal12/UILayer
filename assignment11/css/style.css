@@ -84,11 +84,16 @@ html {
     display: block;
     max-width: 100%;
   }
+  
   @media screen and (max-width: 500px) {
       h1{
           font-size: 200%;
       }
       a{
           width: 120px;
+      }
+      iframe{
+        width: 300px;
+        height:inherit;
       }
     }

@@ -1,4 +1,11 @@
-div{
-    border:bisque;
-    color:darkblue;
+body{
+ background-color: palevioletred;
 }
+@media only screen and (max-width: 500px) {  
+    body {  
+        background-color:green;  
+    }  
+    h1{
+        font-size: inherit;
+    }
+}  

@@ -8,6 +8,7 @@ $(document).ready(function() {
        
         }
         )
+       $("body").css("border","2px solid blue");
   
 }
 )
