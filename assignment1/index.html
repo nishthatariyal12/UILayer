@@ -4,76 +4,286 @@
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/profile.css">
+  <link rel="stylesheet" href="https://mastekgroup.sharepoint.com/_catalogs/masterpage/Masteknet/css/new-icon-fonts.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="shortcut icon" type="image/jpg" href="photos/favicon.png"/>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <link rel="stylesheet" href="photos/favicon.png">
+  
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://mastekgroup.sharepoint.com/_catalogs/masterpage/Masteknet/css/responsive-custom.css?ctag=210618">
+    <link rel="stylesheet" href="https://mastekgroup.sharepoint.com/_catalogs/masterpage/Masteknet/css/shalimaar-main.min.css?ctag=210618">
+  <link rel="stylesheet" href="https://mastekgroup.sharepoint.com/_catalogs/masterpage/Masteknet/css/custom_master_02.css?ctag=210618">
+ 
+  <a href=""></a>
 </head>
 <body>
-    <div id="shalimar">
-        <div class="mn-header row">
-            <div class="container">
-              
 
 
-            <a href="https://mastekgroup.sharepoint.com/" class="logo"><img src="photos/masteklogo.png" alt=""></a>
-          
-              <div class="mn-global-search">
-                  <input type="text" id="spSearchBox"  placeholder="Search Everything" aria-label="Search">
-                  <a id="aSearchLink">
-                    <img src="data:image/png;base64,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" id="searchImg" alt="Search Everything" data-themekey="searchresultui" data-themesrc="https://mastekgroup.sharepoint.com/_layouts/15/images/searchresultui.png?rev=44" data-themingid="4" data-updatedsrc="data:image/png;base64,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">
-                </a>
-            </div>
-           
-            <div class="mn-user-box dropdown pull-right">
-                <span class="text-left">Hi, 
-                </span>
-                <span class="mn-user-display-name" id="dvUname">
-               Nishtha </span>
-                <a href="#" class="dropdown-toggle icon-male-user" id="dropdown1" type="button">
-                    <i class="caret" aria-hidden="true">
-                    </i>
-                </a>
-            </div>
-            <ul class="user-details">
-                <li>
-                    <a href="#" target="_blank">My Profile
-                    </a>
-                </li>
-                <li>
-                    <a href="https://mastekgroup.sharepoint.com/pages/default.aspx">Logout
-                    
-                    
-                    
-                    
-                    
-                    </a>
-                </li>
-            </ul>
-            <!-- Icons -->
-            <ul class="mn-header-icons pull-left">
-                <li>
-                    <a class="icon-bell" href="#" target="_blank" data-toggle="tooltip" title="" data-placement="bottom" data-original-title="Masteknet Alerts">
-                        <span id="dvAlertsCount">
-                        </span>
-                    </a>
-                </li>
-                <li>
-                    <a class="icon-calendar" href="#" target="_blank" data-toggle="tooltip" title="" data-placement="bottom" data-original-title="Attendance">
-                    </a>
-                </li>
-                <li id="myCountryFlag">
-                </li>
-            </ul>
-        </div>
-         
-    </div>
-    <span id="profile-header">My Profile</span>
+    <div class="drawer drawer--left drawer-close" style="overflow: auto;" >
+        <div style="margin-top:95px;" class="s4-notdlg">
+            
+            
+            
+            <div>
 
-          </div>
+                <div id="TurnOnAccessibility" style="display:none" class="s4-notdlg noindex">
+                    <a id="linkTurnOnAcc" href="#" class="ms-accessible ms-acc-button" onclick="SetIsAccessibilityFeatureEnabled(true);UpdateAccessibilityUI();document.getElementById('linkTurnOffAcc').focus();return false;">
+                        Turn on more accessible mode
+                    </a>
+                </div>
+                <div id="TurnOffAccessibility" style="display:none" class="s4-notdlg noindex">
+                    <a id="linkTurnOffAcc" href="#" class="ms-accessible ms-acc-button" onclick="SetIsAccessibilityFeatureEnabled(false);UpdateAccessibilityUI();document.getElementById('linkTurnOnAcc').focus();return false;">
+                        Turn off more accessible mode
+                    </a>
+                </div>
+            
+</div>
+            <div id="ms-designer-ribbon" style="border:solid 0px red;display:none">
+                
+<div>
+
+<div id="suiteBarDelta" class="ms-dialogHidden ms-fullWidth noindex">
     
+<div id="suiteMenuData" class="ms-hide">
+
+ 
+<span style="display:none"><menu type='ServerMenu' id="zz1_ID_PersonalActionMenu" hideicons="true"><ie:menuitem id="zz2_ID_PersonalInformation" type="option" iconSrc="/_layouts/15/images/menuprofile.gif?rev=47" onMenuClick="javascript:GoToPage(&#39;\u002f_layouts\u002f15\u002fuserdisp.aspx?Force=True&#39;);return false;" text="My Settings" description="Update your user information, language and regional settings, and alerts." menuGroupId="100"></ie:menuitem>
+    <ie:menuitem id="zz3_ID_Logout" type="option" onMenuClick="STSNavigate2(event,&#39;/_layouts/15/SignOut.aspx&#39;);" text="Sign Out" description="Logout of this site." menuGroupId="100"></ie:menuitem>
+    </menu></span>
+
+
+                   <span class="ms-siteactions-root" id="siteactiontd">
+                   
+                    
+                    
+                    <span style="display:none"><menu type='ServerMenu' id="zz4_SiteActionsMenuMainData" hideicons="true"><ie:menuitem id="zz5_MenuItem_ShareThisSite" type="option" onMenuClick="EnsureScriptFunc(&#39;sharing.js&#39;, &#39;DisplaySharedWithDialog&#39;, function () { DisplaySharedWithDialog(&#39;\u002f&#39;,null,null,null,true); })" text="Shared with..." description="See who&#39;s here and invite new people." menuGroupId="100"></ie:menuitem>
+    <ie:menuitem id="zz6_MenuItem_ViewAllSiteContents" type="option" iconSrc="/_layouts/15/images/allcontent32.png?rev=47" onMenuClick="STSNavigate2(event,&#39;/_layouts/15/viewlsts.aspx&#39;);" text="Site contents" description="View all libraries and lists in this site." menuGroupId="200"></ie:menuitem>
+    </menu></span></span>
+</div>
+<script type="text/javascript">// <![CDATA[ 
+
+
+    var g_navBarHelpDefaultKey = "HelpHome";
+// ]]>
+</script>
+<div id="suiteBarTop" class="ms-fullWidth ms-TopBarBackground-bgColor" style="height:48px; position:relative;">
+
+    </div><div id="SuiteNavUserName" style="display:none">Nishtha Tariyal</div><div class="wf-family-o365 o365wf" style="display:none">
+
+    </div>
+
+</div>
+<div id="s4-ribbonrow">
+    <div id="globalNavBox">
+<div id="ribbonBox">
+<div id="s4-ribboncont">
+    <div id="DeltaSPRibbon">
+    
+        <div class='ms-cui-ribbonTopBars'><div class='ms-cui-topBar1'></div><div class='ms-cui-topBar2'><div id='RibbonContainer-TabRowLeft' class='ms-cui-TabRowLeft ms-core-defaultFont ms-dialogHidden'>
+            </div><div id='RibbonContainer-TabRowRight' class='ms-cui-TabRowRight s4-trc-container s4-notdlg ms-core-defaultFont'>
+                <a onmouseover="this.firstChild.firstChild.style.left=&#39;-91px&#39;; this.firstChild.firstChild.style.top=&#39;-232px&#39;;" onmouseout="this.firstChild.firstChild.style.left=&#39;-200px&#39;; this.firstChild.firstChild.style.top=&#39;-48px&#39;;" onclick="EnsureScriptFunc(&#39;sharing.js&#39;, &#39;DisplaySharingDialog&#39;, function(){DisplaySharingDialog(&#39;\u002f&#39;)}); return false;" id="ctl00_ctl59_site_share_button" title="Give people access to this site." class="ms-promotedActionButton" href="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ctl59$site_share_button&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, true))" style="display:inline-block;"><span style="height:16px;width:16px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust ms-promotedActionButton-icon"><img src="/_layouts/15/images/spcommon.png?rev=47#ThemeKey=spcommon" alt="Share" style="position:absolute;left:-200px;top:-48px;" /></span><span class="ms-promotedActionButton-text">Share</span></a>
+                
+                
+                
+<span id="fullscreenmodebox" class="ms-qatbutton">
+<span id="fullscreenmode">
+    <a onmouseover="this.firstChild.firstChild.firstChild.style.left=&#39;-125px&#39;; this.firstChild.firstChild.firstChild.style.top=&#39;-178px&#39;;" onmouseout="this.firstChild.firstChild.firstChild.style.left=&#39;-143px&#39;; this.firstChild.firstChild.firstChild.style.top=&#39;-178px&#39;;" id="ctl00_ctl59_fullscreenmodeBtn" title="Focus on Content" onclick="SetFullScreenMode(true);PreventDefaultNavigation();return false;" href="../_controltemplates/15/#" style="display:inline-block;height:30px;width:30px;"><span style="display:inline-block;overflow:hidden;height:16px;width:16px;padding-left:7px;padding-top:7px;padding-right:7px;padding-bottom:7px;"><span style="height:16px;width:16px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust"><img src="/_layouts/15/images/spcommon.png?rev=47#ThemeKey=spcommon" alt="Focus on Content" style="border:0;position:absolute;left:-143px;top:-178px;" /></span></span></a>
+</span>
+<span id="exitfullscreenmode" style="display: none;">
+    <a onmouseover="this.firstChild.firstChild.firstChild.style.left=&#39;-179px&#39;; this.firstChild.firstChild.firstChild.style.top=&#39;-96px&#39;;" onmouseout="this.firstChild.firstChild.firstChild.style.left=&#39;-107px&#39;; this.firstChild.firstChild.firstChild.style.top=&#39;-178px&#39;;" id="ctl00_ctl59_exitfullscreenmodeBtn" title="Focus on Content" onclick="SetFullScreenMode(false);PreventDefaultNavigation();return false;" href="../_controltemplates/15/#" style="display:inline-block;height:30px;width:30px;"><span style="display:inline-block;overflow:hidden;height:16px;width:16px;padding-left:7px;padding-top:7px;padding-right:7px;padding-bottom:7px;"><span style="height:16px;width:16px;position:relative;display:inline-block;overflow:hidden;" class="s4-clust"><img src="/_layouts/15/images/spcommon.png?rev=47#ThemeKey=spcommon" alt="Focus on Content" style="border:0;position:absolute;left:-107px;top:-178px;" /></span></span></a>
+</span>
+</span>
+
+
+            </div></div></div>
+    
+</div>
+</div>
+<span id="DeltaSPNavigation">
+        <span id="ctl00_ctl59_ctl10_publishingRibbon"></span>
+
+</span>
+</div>
+<div id="DeltaWebPartAdderUpdatePanelContainer" class="ms-core-webpartadder">
+    
+<div id="WebPartAdderUpdatePanelContainer">
+<div id="ctl00_ctl59_WebPartAdderUpdatePanel">
         
+    <span id="ctl00_ctl59_WebPartAdder"></span>
+  
+    </div>
+</div>
+
+</div>
+    </div>
+</div>
+
+</div>
+
+
+</div>          
+
+        <!-- ----------------------- div class="s4-notdlg"------------------------ -->
+        <div id="Shalimar" class="s4-notdlg" >
+            <div>
+                <!--  id="Sticky" -->
+                <!--Header-->
+                <div class="mn-header row" >
+                    <div class="container">
+                        <!--Hamburger and Logo-->
+                       
+                       
+                        <!-- Logo -->
+                        <a href="https://mastekgroup.sharepoint.com/" class="mn-logo pull-left" data-toggle="tooltip" data-placement="bottom" data-original-title="Home">
+                            <img src="https://mastekgroup.sharepoint.com/_catalogs/masterpage/Masteknet/images/masteklogo.png?ctag=210618" />
+                        </a>
+                        <!-- Toggle Mobile Dot -->
+                        <div class="profile-dot pull-right">
+                            <i class="icon-dots" aria-hidden="true">
+                            </i>
+                        </div>
+                        <!-- // Toggle Mobile Dot -->
+                        <!--Searchbar and Icons	-->
+                        <div class="mn-global-search pull-left">
+                            <div>
+                                <input type="text" id="spSearchBox" placeholder="Search Everything" autocomplete="off" autocorrect="off" aria-label="Search" />
+                                <a onclick="searchMasteknet()" id="aSearchLink">
+                                    <img src="https://mastekgroup.sharepoint.com/_layouts/15/images/searchresultui.png?rev=44#ThemeKey=searchresultui" id="searchImg" alt="Search Everything" />
+                                </a>
+                            </div>
+                        </div>
+                        <!--User profile-->
+                        
+                        <div class="mn-user-box dropdown pull-right">
+                            <span class="text-left">Hi,
+                        
+                            
+                            </span>
+                            <span class="mn-user-display-name" id="dvUname">Nishtha
+                            </span>
+
+                            <!-- <div class="dropdown" id="dropdown1">
+                                <i class="caret" aria-hidden="true"></i>
+                                <button class="dropbtn"></button>
+                                <div class="dropdown-content" style= "display:none;height: 56px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+                                    <a href="index.html" target="_blank">My Profile</a>
+                                    <a href="https://mastekgroup.sharepoint.com/pages/default.aspx">Logout</a>
+                                <a href="#">Link 3</a>
+                                </div>
+                              </div> -->
+                            <!-- <a href="#" class="dropdown-toggle icon-male-user" class="dropdown1" type="button">
+                                <i class="caret" aria-hidden="true"></i>
+                                </i>
+                            </a> -->
+                        </div>
+<!--                         
+                        <ul class="user-details" style= "display:none;height: 56px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+                            <li>
+                                <a href="index.html" target="_blank">My Profile</a>
+                            </li>
+                            <li>
+                                <a href="https://mastekgroup.sharepoint.com/pages/default.aspx">Logout</a>
+                            </li>
+                        </ul> -->
+                        <!-- <script>
+                            $(document).ready(function(){
+                              $(".dropdown1").on("hide.bs.dropdown", function(){
+                                $(".btn").html('user-details',"<ul>style=display:none</ul>");
+                              });
+                              $(".dropdown").on("show.bs.dropdown", function(){
+                                $(".btn").html('Dropdown <span class="caret caret-up"></span>');
+                              });
+                            });
+                            </script> -->
+                        <!-- Icons -->
+                        <ul class="mn-header-icons pull-left">
+                            <li>
+                                <a class="icon-bell" href="https://ess.masteknet.com/Mastek03/CommonApp/YourAttention.aspx" target="_blank" data-toggle="tooltip" title="" data-placement="bottom" data-original-title="Masteknet Alerts">
+                                    <span id="dvAlertsCount">
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <i class="icon-calendar"></i><a href="#" target="_blank" data-toggle="tooltip" title="" data-placement="bottom" data-original-title="Attendance">
+                                </a>
+                            </li>
+                            <li id="myCountryFlag" class="flag-in">
+                            </li>
+                        </ul>
+                        <!-- Icons 0 -->
+                        <input name="hdnUserVal" id="hdnUserVal" value="" type="hidden" />
+                        <input name="hdnUserCountryVal" id="hdnUserCountryVal" value="" type="hidden" />
+                    </div>
+                    <div id="nav-nav" style="display:block;background-color: #fff; ">
+                        <nav id="horizonal" class="container">
+                            <div class="dropdown">
+                                <button class="dropbtn">Applications <i class="caret" aria-hidden="true"></i></button>
+                                <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                                </div>
+                              </div>
+                             
+                              <div class="dropdown">
+                                <button class="dropbtn">Corporate Functions <i class="caret" aria-hidden="true"></i></button>
+                                <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                                </div>
+                              </div>
+                              <div class="dropdown">
+                                <button class="dropbtn">Collaboration Portals <i class="caret" aria-hidden="true"></i></button>
+                                <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                                </div>
+                              </div>
+                              <div class="dropdown">
+                                <button class="dropbtn">External Links  <i class="caret" aria-hidden="true"></i></button>
+                                <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                                </div>
+                              </div>
+                              <div class="dropdown">
+                                <button class="dropbtn">About Mastek <i class="caret" aria-hidden="true"></i></button>
+                                <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                                </div>
+                              </div>
+                              <div class="dropdown">
+                                <button class="dropbtn">Support <i class="caret" aria-hidden="true"></i></button>
+                                <div class="dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                                </div>
+                              </div>
+                        </nav>
+                    </div>
+                  
+                    
+                </div>
+                <!-- // Header-->
+               
+            </div>
+            <span id="DeltaPlaceHolderPageTitleInTitleArea">My Profile</span>
+            </div>
+            </div>
+            
+  
+   <!-- =========================================================================================================================== -->
         
 
 <script src="https://statica.akamai.odsp.cdn.office.net/bld/_layouts/15/16.0.21326.12006/blank.js" type="text/javascript"></script>
@@ -81,7 +291,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="undefined" crossorigin="anonymous"></script>
 
 
-<!-- <div id="s4-workspace" style="border: 0px solid green; height: 518px; width: 794px;"> -->
     <div id="s4-bodyContainer">
         <div class="container" id="dvContainer">
    
@@ -105,7 +314,7 @@
 <link rel="stylesheet" type="text/css" href="https://mastekgroup.sharepoint.com/_catalogs/masterpage/MyInfo/MyProfile.css?ctag=210608">
 <script src="https://mastekgroup.sharepoint.com/_catalogs/masterpage/MyInfo/MyProfile_v3_min.js?ctag=210608"></script>
 
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </div>
 <div class="container" id="emp" style="margin-top:15px">
     
@@ -114,35 +323,54 @@
      
 <div class="col-sm-4">
     <div class="base-profile">
-        
-        <div id="dvProfilePic" style="margin-top: -80px " align="center">
-            <img onerror="imgError(this);" class="profile-pic" id="PictureURL" data-themekey="#" src="photos/photo.PNG"><div class="edit" style="width: 100%;border: solid 0px red;text-align: center;margin-top: -15px;display: block;margin-left: 25px;">
-              
+        <div id="dvProfilePic" align="center" style="margin-top: -80px;">
+            <img onerror='imgError(this);' class="profile-pic" id="PictureURL" src="photos/photo.PNG">
+           
+            <div class="edit" style="width: 100%;border: solid 0px red;text-align: center;margin-top: -15px;display: block;margin-left: 25px;">
+                <i class="fa fa-camera" style="padding: 0px;font-size: 20px;" ></i>
             </div>
         </div>
         <h2>
-            <span id="PreferredName">Nishtha Tariyal</span>
+            <span style=" font-family: 'Open Sans',sans-serif;">Nishtha Tariyal</span>
         </h2>
         <h5>
-            <div id="Designation" style="padding:5px">Trainee Software Engineer</div>                   
+            <div id="Designation" style="padding:5px ; font-family: 'Open Sans',sans-serif;">Trainee Software Engineer</div>                   
         </h5>
         <ul>
-            <li><i class="icon-webmail"></i>&nbsp;<a href="#"></a><span id="WorkEmail"><a href="mailTo:Nishtha.Tariyal@mastek.com">Nishtha.Tariyal@mastek.com</a></span></a></li>
+            <li><i class="fa fa-envelope-square"></i>&nbsp;<a href='#'><span id="WorkEmail">Nishtha.Tariyal@mastek.com</span></a></li>
             <li id="extDisplay">
                 <div id="dvExtension">
-                    <i class="icon-phone"></i>&nbsp; <span id="txtExtension" class="hide-readonly" style="display: none;"></span>
-                    <div class="edit">
-                        <input type="text" id="Extension" value="" disabled="" class="confidential" maxlength="4">
-                    </div>
+                    <i class="fa fa-phone "style="width: 23px; text-align: center; font-size: 18px"aria-hidden="true"></i> &nbsp;<input type="text" id="Extension" value="+091" disabled class="confidential" maxlength="4" /><i class="fa fa-pencil" ></i>
+                    
                 </div>
             </li>
+            <li id="mobDisplay">
+                <div id="dvCellPhone">
+                    <i class="fa fa-mobile-phone" style="  text-align: center; font-size: 18px">
+                    </i>&nbsp; <input type="text" id="CellPhone" value="9818393617" disabled class="confidential" data-mobile-no="true" maxlength="15" /><i class="fa fa-pencil" ></i>
+                   
+                </div>
+            </li>
+            <br>
+       					
+            <li id="aboutDisplay">
+                <div id="dvAboutMe">
+                    <i class="fa fa-user"></i>&nbsp; <b>About Me</b>
+                    <!-- <br /> -->
+                    <!--  class="hide-readonly" -->
+                   <br>
+                        <input type="text" id="CellPhone" value="" disabled class="confidential" data-mobile-no="true" maxlength="30" />
+                
+                        <i class="fa fa-pencil" ></i>
+                      
+                  
+                </div>
+            </li>
+            <br>
+            <i class="fa fa-graduation-cap"></i>
+            &nbsp;<b>Certifications</b> <i class="fa fa-plus-circle" style="float: right;" ></i>
 
-            <li>
-                <div id="certheader">
-                    <br>
-                  <b>Certifications</b>
-                </div>
-            </li>
+           
         </ul>
     </div>
 </div>
@@ -186,13 +414,13 @@
             <li>
                 <div id="Area">
                     <span>Area </span>
-                    <br><span id="txtArea">TTIL - Noida</span>
+                    <br><span id="txtArea">TTIL - Noida</span><i class="fa fa-lock" style="float: right; color: #ddd; font-size: 15px;"></i>
                 </div>
             </li>
             <li>
                 <div id="SubArea">
                     <span>Sub Area </span>
-                    <br><span id="txtSubArea">Noida</span>
+                    <br><span id="txtSubArea">Noida</span><i class="fa fa-lock" style="float: right; color: #ddd; font-size: 15px;"></i>
                 </div>
             </li>
             
@@ -200,7 +428,7 @@
             <li>
                 <div id="Grade" >
                     <span>Grade </span>
-                    <br><span id="txtGrade">99</span>
+                    <br><span id="txtGrade">99</span><i class="fa fa-lock" style="float: right; color: #ddd; font-size: 15px;"></i>
                 </div>
             </li>
            
@@ -210,7 +438,9 @@
 <div class="col-sm-4 region" id="orgDetails">
     <div>
         <h2 style="padding: 0px 10px 10px 0; border-bottom: solid 1px #ddd ; font-size: 1.46em;">
+            <i class="fa fa-sitemap" style="font-size: 24px"></i>
            <span style="padding: 10px">Organization</span>
+         
         </h2>
         <div id="empOrg" style="margin-top: 5%;"><ul id="ulMain" class="Organization" aria-label="Managers"><li><img class="img_Hierarchy" id="img_ashank16" alt="i:0#.f|membership|ashank16@mastek.com" width="30" height="30" onerror="imgError(this);" src="https://mastekgroup.sharepoint.com/_vti_bin/DelveApi.ashx/people/profileimage?userId=ashank16%40mastek.com&amp;size=S" data-themekey="#"><a href="https://mastekgroup.sharepoint.com/Pages/Mastekeer_Details.aspx?accountname=i%3A0%23.f%7Cmembership%7Cashank16%40mastek.com"><span id="span_ashank16">Ashank Desai</span></a></li><li><img class="img_Hierarchy" id="img_narasim14762" alt="i:0#.f|membership|narasim14762@mastek.com" width="30" height="30" onerror="imgError(this);" src="https://mastekgroup.sharepoint.com/_vti_bin/DelveApi.ashx/people/profileimage?userId=narasim14762%40mastek.com&amp;size=S" data-themekey="#"><a href="https://mastekgroup.sharepoint.com/Pages/Mastekeer_Details.aspx?accountname=i%3A0%23.f%7Cmembership%7Cnarasim14762%40mastek.com"><span id="span_narasim14762">Narasimha Murthy</span></a></li><li><img class="img_Hierarchy" id="img_hiren102311" alt="i:0#.f|membership|hiren102311@mastek.com" width="30" height="30" onerror="imgError(this);" src="https://mastekgroup.sharepoint.com/_vti_bin/DelveApi.ashx/people/profileimage?userId=hiren102311%40mastek.com&amp;size=S" data-themekey="#"><a href="https://mastekgroup.sharepoint.com/Pages/Mastekeer_Details.aspx?accountname=i%3A0%23.f%7Cmembership%7Chiren102311%40mastek.com"><span id="span_hiren102311">Hiren R Shah</span></a></li><li><img class="img_Hierarchy" id="img_kuldeep88105" alt="i:0#.f|membership|kuldeep88105@mastek.com" width="30" height="30" onerror="imgError(this);" src="https://mastekgroup.sharepoint.com/_vti_bin/DelveApi.ashx/people/profileimage?userId=kuldeep88105%40mastek.com&amp;size=S" data-themekey="#"><a href="https://mastekgroup.sharepoint.com/Pages/Mastekeer_Details.aspx?accountname=i%3A0%23.f%7Cmembership%7Ckuldeep88105%40mastek.com"><span id="span_kuldeep88105">Kuldeep Sidhu</span></a></li><li><img class="img_Hierarchy" id="img_nishtha88347" alt="i:0#.f|membership|nishtha88347@mastek.com" width="30" height="30" onerror="imgError(this);" src="https://mastekgroup.sharepoint.com/_vti_bin/DelveApi.ashx/people/profileimage?userId=nishtha88347%40mastek.com&amp;size=S" data-themekey="#"><a href="https://mastekgroup.sharepoint.com/Pages/Mastekeer_Details.aspx?accountname=i%3A0%23.f%7Cmembership%7Cnishtha88347%40mastek.com"><span id="span_nishtha88347">Nishtha Tariyal</span></a></li></ul></div>
     </div>
@@ -222,10 +452,11 @@
 <div class="col-sm-4 confidential-box" id="PersonalDetails">
     <div>
         <h2 style="padding: 0px 10px 10px 0; border-bottom: solid 1px #ddd ; font-size: 1.46em;">
+            <i class="fa fa-info-circle" style="font-size: 24px"></i>
           
             <span style="padding: 0 0 0 10px">
                 Personal Information
-            </span>
+            </span><i class="fa fa-lock" style="float: right; color: #ddd; font-size: 15px;"></i>
         </h2>
         
         <ul>
@@ -251,13 +482,14 @@
                         <div id="dvPassVisa" data-confidential="true" class="confidential">
 
                             Passport / Visa Details
-    
+                            <i class="fa fa-plus-circle" style="float: right;" data-toggle="tooltip" data-placement="bottom" ></i>
                         </div>
                     </li>
                     <li>
                         <div id="dvFamily" data-confidential="true" class="confidential">
 
                             Family Details
+                            <i class="fa fa-plus-circle" style="float: right;" data-toggle="tooltip" data-placement="bottom" ></i>
                         </div>
                     </li>
                 </ul>
@@ -271,14 +503,15 @@
 <div class="col-sm-4 confidential-box" id="ContactDetails">
     <div>
         <h2 style="padding: 0px 10px 10px 0; border-bottom: solid 1px #ddd ; font-size: 1.46em;">
-            <span style="padding: 10px">Contact Information</span>
+            <i class="fa fa-phone-square" style="font-size: 24px"></i>
+            <span style="padding: 10px">Contact Information</span><i class="fa fa-lock" style="float: right; color: #ddd; font-size: 15px;"></i>
         </h2>
        
         <ul>
             <li>
                 <div id="dvPersonalEmailId">
                     <span>Personal Email Id</span><br>
-                    <input type="text" id="PersonalEmailId" value="nishthatariyal@gmail.com" disabled="">
+                    <input type="text" id="PersonalEmailId" value="nishthatariyal@gmail.com" disabled="">&nbsp;<i class="fa fa-pencil"  ></i>
 
                    
 
@@ -288,19 +521,24 @@
                 <div id="dvResidenceNo">
                     <span>Residence No</span>
                     <br>
-                    <input type="text" id="ResidenceNo" value="344" disabled="" data-mobile-no="true" maxlength="15">&nbsp;<i class="fa fa-pencil" onclick="enableInput('ResidenceNo')" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit Residence No"></i><i class="fa fa-save" style="display: none" onclick="saveInput('ResidenceNo')" data-toggle="tooltip" data-placement="bottom" data-original-title="Save Residence No"></i>
+                    <input type="text" id="ResidenceNo" value="344" disabled="" maxlength="15">&nbsp;<i class="fa fa-pencil" onclick="enableInput('ResidenceNo')" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit Residence No"></i><i class="fa fa-save" style="display: none" onclick="saveInput('ResidenceNo')" data-toggle="tooltip" data-placement="bottom" data-original-title="Save Residence No"></i>
                 </div>
             </li>
        
             <li>
                 <div id="CurrentAddress">
-                    <span id="txtAddresHeader">Current Address</span>
-                    <span id="txtAddress"> Rohini, Delhi, Delhi, Delhi, India</span>
+                    <span>Current Address</span>
+                    <br>
+                    <input type="text" id="txtAddress" value="Rohini, Delhi,India" disabled="">&nbsp;<i class="fa fa-pencil" ></i>
+                    <!-- <span id="txtAddresHeader">Current Address</span>
+
+                    <span id="txtAddress"> Rohini, Delhi, Delhi, Delhi, India</span>&nbsp;<i class="fa fa-pencil"  ></i> -->
                    
                     
 
                    
-            </div></li>
+            </div>
+        </li>
         </ul>
     </div>
 </div>
@@ -310,7 +548,7 @@
             <i class="fa fa-ambulance" style="font-size: 24px"></i><span style="padding: 10px">
                 Emergency
                 Details
-            </span>
+            </span><i class="fa fa-lock" style="float: right; color: #ddd; font-size: 15px;"></i>
         </h2>
         
         <ul>
@@ -323,21 +561,21 @@
                         
                     </select>
                     <span class="select2 select2-container select2-container--default select2-container--disabled" dir="ltr" style="width: 50%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" aria-labelledby="select2-BloodGroup-container"><span class="select2-selection__rendered" id="select2-BloodGroup-container" role="textbox" aria-readonly="true" title="O+">O+</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
-                    &nbsp;
+                    &nbsp;<i class="fa fa-pencil"  ></i>
                 </div>
             </li>
             <li>
                 <div id="dvEmergencyContactName">
                     <span>Emergency Contact Name </span>
                     <br>
-                    <input type="text" id="EmergencyContactName" value="XYZ" disabled="">&nbsp;<i class="fa fa-pencil" onclick="enableInput('EmergencyContactName')" data-toggle="tooltip" data-placement="bottom" data-original-title="Edit Emergency Contact Name"></i><i class="fa fa-save" style="display: none" onclick="saveInput('EmergencyContactName')" data-toggle="tooltip" data-placement="bottom" data-original-title="Save  Emergency Contact Name"></i>
+                    <input type="text" id="EmergencyContactName" value="XYZ" disabled="">&nbsp;<i class="fa fa-pencil"  ></i>
                 </div>
             </li>
             <li>
                 <div id="dvEmergencyContactNo">
                     <span>Emergency Contact No </span>
                     <br>
-                    <input type="text" id="EmergencyContactNo" value="868898877" disabled="" >
+                    <input type="text" id="EmergencyContactNo" value="868898877" disabled="" >&nbsp;<i class="fa fa-pencil"  ></i>
                 </div>
             </li>
     </ul></div>
