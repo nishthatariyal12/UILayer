@@ -16,7 +16,40 @@
         <label>Last Name</label>
         <input type="text" name="lastName" id="lastName">
         <span class="err" id="lname_err"></span><br/>
-        <input type="submit" value="Submit" id="submit">    
+      
+        <label>Email</label>
+        <input type="text" name="Email" id="Email">
+        <span class="err" id="email_err"></span><br/> 
+        <label for="Gender" > select gender</label><br>
+        <select id="gender" class="custom-select" >
+              
+        <option value="none" selected disabled hidden>
+            Select an Option
+        </option> 
+                <option value="1">male</option>
+                <option value="2">female</option>
+                <option value="3">other</option>
+              </select>
+              <span class="err" id="gender_err"></span><br/>
+            <br>
+           
+            <div id=”tex”>Course:</div>
+            <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input"  name="course[]" id="course" value="">Course 1
+                </label>
+              </div>
+              <div class="form-check">
+                <label class="form-check-label">
+                  <input type="checkbox" class="form-check-input" name="course"id="course" value="">Course 2
+                </label>
+              </div>
+             
+              <span class="err" id="course_err"></span><br/> 
+            <br>
+        
+        <input type="submit" value="Submit" id="submit">  
+
     </form>
    
     <script src="js/app.js"></script>
