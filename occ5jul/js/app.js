@@ -43,12 +43,9 @@ function handleFormSubmit(event) {
   
   const formJSON = Object.fromEntries(data.entries());
 
-  // for multi-selects, we need special handling
   formJSON.course = data.getAll('course');
 
-//   const results = document.querySelector('.results pre');
 
-//  results.innerText = JSON.stringify(formJSON, null, 2);
  console.log(JSON.stringify(formJSON));
 }
 
