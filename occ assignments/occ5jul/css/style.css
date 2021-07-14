@@ -82,9 +82,8 @@ p {
   margin-left: 0.25rem;
 }
 
-.contact-form input,
-.contact-form select,
-.contact-form textarea{
+.contact-form input,.contact-form select,.contact-form textarea
+{
   display: block;
   margin-top: 0.25rem;
   padding: 0.5rem 0.75rem;
@@ -131,4 +130,8 @@ p {
 .contact-form button:focus {
   background: var(--color-darkest);
   cursor: pointer;
+}
+.error{
+  color:red;
+  margin-top: 0%;
 }

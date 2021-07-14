@@ -1,37 +1,38 @@
-$(document).ready(function(){
-    $("span").text(" ");
-    
-    $("#submit").click(function(){
-        
-        const isValidated=formValidation();
-        if(isValidated){
-            
-            return true;
-        }else{            
-            return false;
+$().ready(function() {
+    // validate the comment form when it is submitted
+   
+
+    // validate signup form on keyup and submit
+    $("#commentForm").validate({
+        rules: {
+            firstname: "required",
+            lastname: "required",
+           
+          
+            email: {
+                required: true,
+                email: true
+            },
+            course: {
+                required: true,
+                minlength: 1
+            },
+            gender:{
+                required:true
+            }
+        },
+        messages: {
+            firstname: "Please enter your firstname",
+            lastname: "Please enter your lastname",
+          
+            email: "Please enter a valid email address",
+           
+            course: "Please select at least 1 topics"
         }
     });
-   
-    function formValidation(){
-        let flag=0;
-         if ($("#gender:selected").length == 0){
-        $("#gender_err").text("gender required!");
-        flag = 1;
-    }
-    if ($("#course:checked").length == 0){
-        $("#course_err").text("course is required");
-        flag = 1;
-        }
-
-    if (flag){
-        return false
-    }
-    else{
-        return true
-    }
-   } 
 });
 
+   
 
 
 
@@ -47,6 +48,7 @@ function handleFormSubmit(event) {
 
 
  console.log(JSON.stringify(formJSON));
+ alert("success")
 }
 
 const form = document.querySelector('.contact-form');
